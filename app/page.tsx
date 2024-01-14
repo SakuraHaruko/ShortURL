@@ -66,7 +66,7 @@ const Home: React.FC<HomeProps> = () => {
 
           const result: ApiResponse = await response.json();
 
-            setMessage(result.message);
+            window.alert(result.message)
         } catch (error) {
           console.error('Error submitting URL:', error);
           setMessage('An error occurred while submitting the URL.');
