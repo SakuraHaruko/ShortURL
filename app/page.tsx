@@ -79,7 +79,7 @@ const Home: React.FC<HomeProps> = () => {
           setMessage('An error occurred while submitting the URL.');
         }
       },
-      []
+      [message]
   );
 
   return (
