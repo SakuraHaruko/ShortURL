@@ -66,17 +66,13 @@ const Home: React.FC<HomeProps> = () => {
 
           const result: ApiResponse = await response.json();
 
-          if (result.code === 1) {
             setMessage(result.message);
-          } else if (result.code === 0) {
-            setMessage(result.message);
-          }
         } catch (error) {
           console.error('Error submitting URL:', error);
           setMessage('An error occurred while submitting the URL.');
         }
       },
-      [message]
+      [turnstileData, urlInput]
   );
 
   return (
