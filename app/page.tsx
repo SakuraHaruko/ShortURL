@@ -6,9 +6,6 @@ import Script from 'next/script';
 interface ApiResponse {
   code: number;
   message: string;
-  data?: {
-    id: string;
-  };
 }
 
 interface HomeProps {}
@@ -71,8 +68,8 @@ const Home: React.FC<HomeProps> = () => {
 
           if (result.code === 1) {
             setMessage(result.message);
-          } else if (result.code === 0 && result.data) {
-            setMessage(`Success! ID: ${result.data.id}`);
+          } else if (result.code === 0) {
+            setMessage(result.message);
           }
         } catch (error) {
           console.error('Error submitting URL:', error);
