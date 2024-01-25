@@ -6,6 +6,9 @@ import Script from 'next/script';
 interface ApiResponse {
   code: number;
   message: string;
+  data: {
+      code: string;
+  }
 }
 
 interface HomeProps {}
@@ -66,7 +69,12 @@ const Home: React.FC<HomeProps> = () => {
 
           const result: ApiResponse = await response.json();
 
-            window.alert(result.message)
+          if (result.code === 0) {
+              setMessage('Your URL is https://qwq.lgbt/' + result.data.code);
+          }else {
+              console.error('Error submitting URL:', result);
+              setMessage('An error occurred while submitting the URL.');
+          }
         } catch (error) {
           console.error('Error submitting URL:', error);
           setMessage('An error occurred while submitting the URL.');
