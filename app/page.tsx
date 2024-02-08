@@ -4,16 +4,14 @@ import Image from 'next/image';
 import Script from 'next/script';
 
 interface ApiResponse {
-  code: number;
-  message: string;
-  data: {
-      code: string;
-  }
+    code: number;
+    message: string;
+    data: {
+        code: string;
+    }
 }
 
-interface HomeProps {}
-
-const Home: React.FC<HomeProps> = () => {
+export default function MainPage() {
   const [message, setMessage] = useState<string | null>(null);
   const [turnstileData, setTurnstileData] = useState<string | null>(null);
   const [urlInput, setUrlInput] = useState<string>('');
@@ -139,5 +137,3 @@ const Home: React.FC<HomeProps> = () => {
       </main>
   );
 };
-
-export default Home;
