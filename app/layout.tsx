@@ -42,6 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <title>Short Url - qwq.lgbt</title>
         <link rel="apple-touch-icon" sizes="384x384" href="https://data.nekocafe.moe/qwq.lgbt/images/image1-384.png" />
         <link rel="apple-touch-icon" sizes="256x256" href="https://data.nekocafe.moe/qwq.lgbt/images/image1-256.png" />
         <link rel="apple-touch-icon" sizes="512x512" href="https://data.nekocafe.moe/qwq.lgbt/images/image1-512.png" />
