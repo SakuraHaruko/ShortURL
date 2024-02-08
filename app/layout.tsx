@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-
+  metadataBase: new URL('https://qwq.lgbt'),
 
   title: 'Short Url - NekoCafe',
   description: 'Shorten your URL~',
