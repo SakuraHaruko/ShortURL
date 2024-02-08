@@ -132,7 +132,7 @@ export default function MainPage() {
         </div>
           <div className="text-gray-500 text-sm mt-4 absolute inset-x-0 bottom-0 text-center py-4">
               <span>Powered By <a href="https://nekocafe.moe" target="_blank">NekoCafe Network</a></span><br />
-              <span>Copyright &copy; 2022-2024 NekoCafe Network, All Rights Reserved.</span>
+              <span>Copyright &copy; 2022-2024 NekoCafe Network, All Rights Reserved.</span><br />
               <span><a href="https://icp.gov.moe/?keyword=20244192" target="_blank">萌ICP备20244192号</a></span>
           </div>
       </main>
